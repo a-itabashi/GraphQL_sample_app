@@ -4,6 +4,7 @@ import VueApollo from 'vue-apollo'
 import ApolloClient from "apollo-boost"
 
 import Index from './components/index.vue'
+import New from './components/new.vue'
 
 const apolloClient = new ApolloClient({
   uri: "/graphql"
@@ -21,6 +22,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/', component: Index },
+    { path: '/new', component: New },
   ],
 })
 
